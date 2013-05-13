@@ -2,11 +2,52 @@
 \label{Apendice2:label}
 
 
-
-
-
-
 \section{Grafica de intervalo [-1,4]}
+\label{sec6}
+\begin{center}
+\begin{footnotesize}
+\begin{verbatim}
+   
+   Nombre del fichero:
+    tiempo_grafica.-1.4.py
+
+   Autoras de dicho fichero:
+    Nadia Chinea Chinea 
+    Tania Gutierrez Gutierrez 
+    Melanie Hernandez Alonso
+
+   #!/usr/bin/python
+   from matplotlib.pylab import *
+
+   def s(t):
+     return 0.633479114507
+
+   def c(t):
+     return  0.646540956674
+
+   t = linspace(-1, 4, 51)  # 51 puntos entre -1 y 4
+   y = zeros(len(t))       # reserva memoria para y con elementos flotantes
+   for i in xrange(len(t)):
+     y[i] = s(t[i])
+
+   tc = linspace(-1, 4, 51)  # 51 puntos entre -1 y 4
+   yc = zeros(len(t))       # reserva memoria para y con elementos flotantes
+   for i in xrange(len(t)):
+     yc[i] = c(tc[i])
+
+   plot(t,y)
+   plot(tc,yc)
+   xlim(-2.0, 5.0)
+   ylim(0.5, 0.8)
+   savefig('2intervalo.eps')
+   show()
+   
+\end{verbatim}
+\end{footnotesize}
+\end{center}
+
+
+\section{Grafica de intervalo [2,8]}
 \label{sec7}
 \begin{center}
 \begin{footnotesize}
