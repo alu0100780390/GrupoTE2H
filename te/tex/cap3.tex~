@@ -17,13 +17,26 @@ Esta parte del experimento comienza con la creación de un módulo principal que c
 con la intención de que introduzca los intervalos deseados. Los resultados que se obtienen se guardarán en un fichero que se pedirá también por teclado, 
 pudiendo guardar variar ejecuciones en el mismo, es decir, sin que se sobrescriba al usar el mismo nombre.
 En un módulo aparte, se calculará el tiempo que tarda en ejecutarse cada intervalo y el tiempo que mantiene el cpu.
+\subsection{Experimento con la fórmula compuesta}
+En cuanto a la segunda parte, se podría decir, que es una ampliación de la primera. Dado que la fórmula compuesta permite realizar el experimento con 
+números de reiteraciones diferentes se proponen dos programas en los que el número de reiteraciones esté ya asignado, siendo 2 y 4 el número de 
+repeticiones que se harán. Los intervalos de cuyos resultados se encuentran a continuación, han sido de [-1,1],[-1,4],[2,8].
+Al igual que en la primera parte se verán los tiempos trancurridos y los del CPU.
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Descripción del material}
 \label{3:sec:2}
-
-bla, bla, etc. 
-
-
+\begin{itemize}
+\item Para la realización de este trabajo, se ha utilizado la computadora, 
+como herramienta principal. Ésta posee una serie de recursos a la hora de trabajar , ya sea, programas, editores de texto(kate, vi...), consola, entre otros,
+los cuales han sido útiles, y empleados en este caso para la realización de este proyecto. A continuación, daremos la información 
+sobre el hadware, sistema operativo y compilador de la computadora utilizada para la realización de dicho trabajo:\par
+Tipo de CPU: Pentium(R) Dual-Core  CPU      E5200  @ 2.50GHz \par
+cache size: 2048 KB \par
+CPU speed: 1200.000 Hz \par
+vendor ID: GenuineIntel \par
+Linux version: Linux-3.2.0-40-generic-i686-with-Ubuntu-12.04-precise \par
+Python version: 2.7.3 \par
+\end{itemize}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Resultados obtenidos}
 \label{3:sec:3}

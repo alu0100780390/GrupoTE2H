@@ -15,5 +15,16 @@ apoyan el tema objeto de la investigación.
 
 \section{Segundo apartado del segundo capítulo}
 \label{2:sec:2}
-  Primer párrafo de la segunda sección.
+La fórmula simple se define como:
+\[\int_{a}^{b} f(x)\text{d}x ~ \frac{b-a}{6}\big[f(a)+4f(m)+f(b)\big]\]\par
+ 
+Por otra parte, la fórmula compuesta aparece como:
+
+\[\int_{a}^{b} f(x)\text{d}x ~ \frac{h}{3}\big[f(x_0)+2\sum_{j=1}{\frac{n}{2-1}} f(x_{2j})+4 \sum_{j=1}{\frac{n}{2}}f(x_{2j-1})+f(x_n)\]
+
+
+En nuestro proyecto, se nos ha propuesto utilizar principalmente el intervalo [-1,1] pero debido al tipo de experimento que deseamos 
+realizar, además de éste, otros intervalos de diferentes tamaños para que nos produzcan resultados variados y se determine, como se ha expuesto aquí,
+la considerable diferencia entre la utilización de cada una de las fórmulas y la variación entre las diferentes cotas.
+
 
