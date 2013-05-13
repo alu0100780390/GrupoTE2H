@@ -207,19 +207,12 @@
 \end{appendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{thebibliography}{10}
- \bibitem {uno}Edicion de documentos en ~\LaTeX Andre Deprit, Antonio Felipe, Sebastian Ferrer 
- 
- \bibitem{grifhing} URL: Wikipedia {Método de Simpson}
- Wikipedia.{\small   $ http: //es.wikipedia.org/wiki/Regla_de_Simpson$}
- 
- \bibitem{python} Python / Jim Knowlton (2008)
- 
- \bibitem{geo1} Calculo y Geometria analitica. Volumen1 / Sherman~.k~Stein, Anthony Barcellos
- 
- \bibitem{geo2} Calculo con geometria analitica / Dennis ~G. Zill
- 
-\end{thebibliography}
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliographystyle{plain}
+
+
+\bibliography{bib/references}
+\nocite{*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -39,3 +39,52 @@
 \end{verbatim}
 \end{footnotesize}
 \end{center}
+
+      
+\section{Algoritmo de tiempo de ejecucion, compuesta}
+\label{sec4}
+\begin{center}
+\begin{footnotesize}
+\begin{verbatim}
+   
+   Nombre del fichero:
+    tiempo_compuesta.py
+
+   Autoras de dicho fichero:
+    Nadia Chinea Chinea 
+    Tania Gutierrez Gutierrez 
+    Melanie Hernandez Alonso
+
+  #!/usr/bin/python
+  import random, sys
+  from math import *
+  import time
+  
+  e0 = time.time ()
+  c0 = time.clock ()
+ 
+  n=4
+  def f(x):
+    return 1/(sqrt(2*pi))*exp((-x**2)/2)
+  
+  def simpson1(a,b,x1,x2,x3):
+    f1=(((b-a)/n)/3.0)
+    f2=(f(a)+(2.0*f(x1))+(4.0*f(x2))+(2.0*f(x3))+f(b))
+    return f1*f2 
+      
+  if __name__ == '__main__':
+    if (len(sys.argv)) == 6:
+      a=float(sys.argv[1])
+      b=float(sys.argv[2])
+      x1=float(sys.argv[3])
+      x2=float(sys.argv[4])
+      x3=float(sys.argv[5])
+ 
+  elapsed_time =  time.time() - e0
+  cpu_time = time.clock() - c0
+  print ' El tiempo transcurrido con la formula compuesta,es el siguiente: ',elapsed_time
+  print ' El tiempo de ejecucion de la CPU es: ',cpu_time
+\end{verbatim}
+\end{footnotesize}
+\end{center}
+
