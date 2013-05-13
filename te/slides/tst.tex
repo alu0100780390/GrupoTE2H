@@ -84,12 +84,28 @@ que obliga a alcanzar una mayor destreza en este campo.
 
 \section{Fundamentos Teóricos}
 
+
 \begin{frame}
 \frametitle{Fundamentos Teóricos}
-
+\begin{block}{}
+La forma más común a la hora de hallar áreas de funciones es la integral definida.
+La integración es un concepto fundamental del cálculo y del análisis matemático. Básicamente, la integral es una generalización 
+de la suma de infinitos sumandos,infinitamente pequeños.
+\end{block}
+\begin{block}{}
+ Algunos métodos numéricos son el método de Taylor,Simpson, punto medio, regla del rectángulo,etc. En este caso, utilizaremos el método de Simpson.
+\end{block}
 \end{frame}
 
+\begin{frame}
+\begin{block}{}
 
+\[\int_{-1}^{1} \frac{1}{\sqrt{2\pi}}\text{e}^{\frac{-x^2}{2}} \text{d}x\] 
+Para la regla de Simpson existen dos fórmulas cuya elección recae en el tamaño de la acotación, es decir, para un intervalo pequeño, como por ejemplo [-1,1],
+se debe utilizar la fórmula simple del método y para una cota superior, como lo es [2,23] es más correcto el uso de la fórmula compuesta de Simpson.
+\end{block}
+
+\end{frame}
 \begin{frame}
 \begin{block}{Fórmulas}
 La fórmula simple se define como:
@@ -121,13 +137,16 @@ Por lo tanto se puede dividir en dos partes.
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
-
+Esta parte del experimento comienza con la creación de un módulo principal que contiene una definición de la función y llamadas al usuario
+con la intención de que introduzca los intervalos deseados. Los resultados que se obtienen se guardarán en un fichero que se pedirá también por teclado, 
+pudiendo guardar varias ejecuciones en el mismo, es decir, sin que se sobrescriba al usar el mismo nombre.
+En un módulo aparte se calculará el tiempo que tarda en ejecutarse cada intervalo y el tiempo que mantiene el cpu.
 
 \begin{ejemplo}
   \begin{itemize}
-    \item Con 
-    \item Con 
-    \item Con 
+ \item Con el intervalo [-1,1]
+    \item Con el intervalo [-1,4]
+    \item Con el intervalo [2,8]
   \end{itemize}
 \end{ejemplo}
 
@@ -168,9 +187,9 @@ Por lo tanto se puede dividir en dos partes.
 
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
-%\begin{frame}
-
-%\end{frame}
+\begin{frame}
+\input{table3.tex}
+\end{frame}
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
@@ -185,6 +204,16 @@ Por lo tanto se puede dividir en dos partes.
 \label{fig:1}
 \end{center}
 \end{figure}
+
+\begin{frame}
+ \begin{figure}[!th]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{3intervalo.eps}
+\caption{Intervalo [2,8]}
+\label{fig:3}
+\end{center}
+\end{figure}
+\end{frame}
 
 
 %------------------------------------------------------------------------------
@@ -211,6 +240,13 @@ En cuanto al tiempo de la CPU, no varía en absoluto en ninguno de los intervalo
 \begin{frame}
 \frametitle{Conclusiones}
 
+El objetivo de este trabajo ha sido la confección de un informe redactado en código ~\LaTeX, y unas transparencias en Beamer con este mismo lenguaje. 
+Cabe decir, que el lenguaje de programación con el que se ha confeccionado el experimento ha sido el python.
+Hemos obtenido la verificación de que los intervalos menores se usan para la fórmula simple y 
+que los mayores para la fórmula compuesta.
+También hemos visto que en los programas en los que intervienen definiciones de funciones no muy complejas el tiempo de la CPU es mínimo.
+Se puede concluir diciendo que hemos obtenido facilidades a la hora de creación de códigos para resolución de problemas, ademas de haber 
+logrado aumentar las capacidades que ya se tenían con ~\LaTeX
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
