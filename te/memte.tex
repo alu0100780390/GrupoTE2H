@@ -9,7 +9,7 @@
 \usepackage{templates/algorithm}
 \usepackage{templates/algorithmic}
 \usepackage{templates/multirow}
-
+\usepackage{amsmath}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\SONY}{{\sc Sony}}
@@ -89,7 +89,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % First Page 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \pagestyle{empty}
 \thispagestyle{empty}
 
@@ -105,10 +104,10 @@
 
 \HRule
 \begin{center}
-        {\Huge Título del trabajo} \\[2.5mm] 
-        {\Huge Subtítulo} \\[2.5mm]
-        {\Large Autor (o autores)} \\[5mm]
-        {\Large \textit{Grupo ($1\mid2$) }} \\[5mm]
+        {\Huge Método de Simpson} \\[2.5mm] 
+        {\Huge Comparación de fórmulas del método} \\[2.5mm]
+        {\Large Nadia Chinea,Tania Gutiérrez, Melanie Hernández} \\[5mm]
+        {\Large \textit{Grupo($2\mid H$) }} \\[5mm]
 
 
         {\em Técnicas Experimentales. $1^{er}$ curso. $2^{do}$ semestre} \\[5mm]
@@ -122,7 +121,6 @@
 \begin{center}
   La Laguna, \today 
 \end{center}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,7 +130,7 @@
 % No funciona bien \markboth sin "twoside" en \documentclass, pero al
 % ponerlo se dan un montón de errores de underfull \vbox, con lo que no se
 % ha puesto.
-\markboth{Nombre del alumno}{Título del trabajo}
+\markboth{N.Chinea, T.Gutiérrez, M.Hernández}{Método de Simpson}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Numeracion en romanos
@@ -194,12 +192,12 @@
 \thispagestyle{empty}
 \begin{appendix}
 
-\chapter{Título del Apéndice 1}
+\chapter{Algoritmo de módulos de las fórmulas y tiempo}
 \label{appendix:1}
 
 \input{tex/apendice1.tex}
 
-\chapter{Título del Apéndice 2}
+\chapter{Algoritmo de Gráficas}
 \label{appendix:2}
 
 \input{tex/apendice2.tex}

@@ -11,7 +11,10 @@ análisis de los resultados.
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Descripción de los experimentos}
 \label{3:sec:1}
-
+Como se ha explicado en el capítulo dos, el método propuesto tiene tanto fórmula simple (para intervalos pequeños) como compuesta (para intervalos mayores).
+Por ello, el experimento se basará en la comparación entre las fórmulas, en el que se realizarán pruebas de tiempo de ejecución de ambas con 
+diferentes intervalos,además de distintas reiteraciones en el caso de la compuesta.
+Por lo tanto se puede dividir en dos partes.
 \subsection{Experimento con la fórmula simple}
 Esta parte del experimento comienza con la creación de un módulo principal que contiene una definición de la función y llamadas al usuario
 con la intención de que introduzca los intervalos deseados. Los resultados que se obtienen se guardarán en un fichero que se pedirá también por teclado, 
@@ -36,23 +39,29 @@ CPU speed: 1200.000 Hz \par
 vendor ID: GenuineIntel \par
 Linux version: Linux-3.2.0-40-generic-i686-with-Ubuntu-12.04-precise \par
 Python version: 2.7.3 \par
+\item Además, como hemos utilizado para la realización del informe,el ~\LaTeX, sistema de composición de textos orientado especialmente para la creación de libros, documentos científicos y técnicos
+que contengan varias fórmulas matemáticas.   
+  \item Para la presentación con transparencias, empleamos un macro de ~\TeX, Beamer, ideado para realizar presentación que permitan la inclusión de fórmulas matemáticas.
+  \item Y por último, manejamos Python, que es un lenguaje de programación interpretado. Sus ventajas son la rapidéz de desarrollo, debido a que no es necesario 
+compilarlo, dicho lenguaje es multiplataforma y de codigo abierto.
+
 \end{itemize}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Resultados obtenidos}
 \label{3:sec:3}
 
-bla, bla, etc. 
-
+A continuación, se pueden ver las tablas y gráficas de los resultados que se han obtenido después de realizar los experimentos:
+\ref{fig:1}
+\ref{fig:2}
+\ref{fig:3}
+\ref{tab:1}
+\ref{tab:2}
+\ref{tab:3}
 
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
 
-
-%------------------------------------------------------------------------------
-
-\input{tables/table.tex}
-\input{tables/table2.tex}
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Análisis de los resultados}
@@ -66,11 +75,31 @@ Por otra parte,  se ha experimentado con el tiempo transcurrido para el tratamie
 transcurrido durante la ejecución del programa varía dependiendo de la computadora que se use, aún así podemos apreciar que es mayor al realizar la fórmula 
 compuesta ya que las reiteraciones hacen que el programa se retrase.
 En cuanto al tiempo de la CPU, no varía en absoluto en ninguno de los intervalos puesto que la respuesta de la CPU es inmediata. 
+
 %------------------------------------------------------------------------------
+
+\input{tables/table.tex}
+\input{tables/table2.tex}
+\input{tables/table3.tex}
+\input{tables/table5.tex}
+%------------------------------------------------------------------------------
+\begin{figure}[!th]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{images/1intervalo.eps}
+\caption{Intervalo [-1,1]}
+\label{fig:1}
+\end{center}
+\end{figure}
 \begin{figure}[!th]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{images/2intervalo.eps}
 \caption{Intervalo [-1,4]}
 \label{fig:2}
+\end{center}
+\end{figure}
+\begin{center}
+\includegraphics[width=0.75\textwidth]{images/3intervalo.eps}
+\caption{Intervalo [2,8]}
+\label{fig:3}
 \end{center}
 \end{figure}

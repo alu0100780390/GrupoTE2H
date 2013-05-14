@@ -9,7 +9,7 @@
 \usepackage{templates/algorithm}
 \usepackage{templates/algorithmic}
 \usepackage{templates/multirow}
-
+\usepackage{amsmath}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\SONY}{{\sc Sony}}
@@ -89,7 +89,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % First Page 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \pagestyle{empty}
 \thispagestyle{empty}
 
@@ -105,10 +104,10 @@
 
 \HRule
 \begin{center}
-        {\Huge Título del trabajo} \\[2.5mm] 
-        {\Huge Subtítulo} \\[2.5mm]
-        {\Large Autor (o autores)} \\[5mm]
-        {\Large \textit{Grupo ($1\mid2$) }} \\[5mm]
+        {\Huge Método de Simpson} \\[2.5mm] 
+        {\Huge Comparación de fórmulas del método} \\[2.5mm]
+        {\Large Nadia Chinea,Tania Gutiérrez, Melanie Hernández} \\[5mm]
+        {\Large \textit{Grupo($2\mid H$) }} \\[5mm]
 
 
         {\em Técnicas Experimentales. $1^{er}$ curso. $2^{do}$ semestre} \\[5mm]
@@ -122,7 +121,6 @@
 \begin{center}
   La Laguna, \today 
 \end{center}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,7 +130,7 @@
 % No funciona bien \markboth sin "twoside" en \documentclass, pero al
 % ponerlo se dan un montón de errores de underfull \vbox, con lo que no se
 % ha puesto.
-\markboth{Nombre del alumno}{Título del trabajo}
+\markboth{N.Chinea, T.Gutiérrez, M.Hernández}{Método de Simpson}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Numeracion en romanos
@@ -207,12 +205,19 @@
 \end{appendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\addcontentsline{toc}{chapter}{Bibliografía}
-\bibliographystyle{plain}
-
-
-\bibliography{bib/references}
-\nocite{*}
+\begin{thebibliography}{10}
+ \bibitem {uno}Edicion de documentos en ~\LaTeX Andre Deprit, Antonio Felipe, Sebastian Ferrer 
+ 
+ \bibitem{grifhing} URL: Wikipedia {Método de Simpson}
+ Wikipedia.{\small   $ http: //es.wikipedia.org/wiki/Regla_de_Simpson$}
+ 
+ \bibitem{python} Python / Jim Knowlton (2008)
+ 
+ \bibitem{geo1} Calculo y Geometria analitica. Volumen1 / Sherman~.k~Stein, Anthony Barcellos
+ 
+ \bibitem{geo2} Calculo con geometria analitica / Dennis ~G. Zill
+ 
+\end{thebibliography}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

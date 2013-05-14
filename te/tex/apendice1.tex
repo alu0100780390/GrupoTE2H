@@ -1,24 +1,49 @@
-\section{Algoritmo XXX}
+
 \label{Apendice1:XXX}
 
+\section{Formula simple }
 \begin{center}
 \begin{footnotesize}
 \begin{verbatim}
-###################################################################################
-# Fichero .py
-###################################################################################
-#
-# AUTORES
-#   
-# FECHA
-#
-# DESCRIPCION
-#
-###################################################################################
+ Nombre del fichero:
+  modulo_simpson.py
+
+ Autoras de dicho fichero:
+   Nadia Chinea Chinea 
+   Tania Gutierrez Gutierrez 
+   Melanie Hernandez Alonso
+  
+ #!/usr/bin/python
+
+import random, sys
+from math import *
+
+def f(x):
+  return 1.0/(sqrt(2.0*pi))*exp((-x**2.0)/2)
+  
+def simpson(a,b):
+  
+  f1=(b-a)/6.0
+  f2=f(a)+(4.0*f((a+b)/2.0))+f(b)
+  
+  return f1*f2   
+  
+if __name__ == '__main__':
+  
+  if (len(sys.argv)) == 4:
+    a=float(sys.argv[1])
+    b=float(sys.argv[2])
+    nombre_fichero=(sys.argv[3])
+    fich=open(nombre_fichero, 'a') #utilizamos a, para que no nos borre el contenido anterior del fichero
+    fich.write ('El area para la formula simple es:{0}\n'.format(simpson(a,b)))
+    fich.close()
+    print 'Para ver su resultado abra el fichero'
+  else:
+    print 'Los argumentos que ha introducido son incorrectos, introduzca: min_valor, max_valor, nombre_fichero.'
+
 \end{verbatim}
 \end{footnotesize}
 \end{center}
-
 
 
 \section{Formula Compuesta con intervalo 4 }
@@ -75,6 +100,50 @@ if __name__ == '__main__':
 \end{footnotesize}
 \end{center}
 
+
+\section{Algoritmo de tiempo de ejecucion, simple}
+\label{sec3}
+\begin{center}
+\begin{footnotesize}
+\begin{verbatim}
+   
+   Nombre del fichero:
+    tiempo_simple.py
+
+   Autoras de dicho fichero:
+    Nadia Chinea Chinea 
+    Tania Gutierrez Gutierrez 
+    Melanie Hernandez Alonso
+
+    #!/usr/bin/python
+    import random, sys
+    from math import *
+    import time
+  
+    e0 = time.time ()
+    c0 = time.clock ()
+ 
+    def f(x):
+      return 1.0/(sqrt(2.0*pi))*exp((-x**2.0)/2)
+  
+    def simpson(a,b):
+      f1=(b-a)/6.0
+      f2=f(a)+(4.0*f((a+b)/2.0))+f(b)
+      return f1*f2 
+  
+    if __name__ == '__main__':
+      if (len(sys.argv)) == 3:
+        a=float(sys.argv[1])
+        b=float(sys.argv[2])
+ 
+   elapsed_time =  time.time() - e0
+   cpu_time = time.clock() - c0
+  print ' El tiempo transcurrido con la formula simple, es el siguiente: ',elapsed_time
+  print ' El tiempo de ejecucion de la CPU es: ',cpu_time
+ 
+\end{verbatim}
+\end{footnotesize}
+\end{center}
 
       
 \section{Algoritmo de tiempo de ejecucion, compuesta}

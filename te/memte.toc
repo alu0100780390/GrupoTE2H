@@ -1,0 +1,23 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Motivaci\'on y objetivos}{1}
+\contentsline {section}{\numberline {1.1}Objetivo principal}{1}
+\contentsline {section}{\numberline {1.2}Objetivos secundarios}{1}
+\contentsline {chapter}{\numberline {2}Fundamentos te\'oricos}{2}
+\contentsline {section}{\numberline {2.1}Ideas principales}{2}
+\contentsline {section}{\numberline {2.2}Segundo apartado del segundo cap\IeC {\'\i }tulo}{2}
+\contentsline {chapter}{\numberline {3}Procedimiento experimental}{4}
+\contentsline {section}{\numberline {3.1}Descripci\'on de los experimentos}{4}
+\contentsline {subsection}{\numberline {3.1.1}Experimento con la f\'ormula simple}{4}
+\contentsline {subsection}{\numberline {3.1.2}Experimento con la f\'ormula compuesta}{4}
+\contentsline {section}{\numberline {3.2}Descripci\'on del material}{5}
+\contentsline {section}{\numberline {3.3}Resultados obtenidos}{5}
+\contentsline {section}{\numberline {3.4}An\'alisis de los resultados}{5}
+\contentsline {chapter}{\numberline {4}Conclusiones}{9}
+\contentsline {chapter}{\numberline {A}Algoritmo de m\'odulos de las f\'ormulas y tiempo}{11}
+\contentsline {section}{\numberline {A.1}Formula simple }{11}
+\contentsline {section}{\numberline {A.2}Formula Compuesta con intervalo 4 }{12}
+\contentsline {section}{\numberline {A.3}Algoritmo de tiempo de ejecucion, simple}{13}
+\contentsline {section}{\numberline {A.4}Algoritmo de tiempo de ejecucion, compuesta}{13}
+\contentsline {chapter}{\numberline {B}Algoritmo de Gr\'aficas}{15}
+\contentsline {section}{\numberline {B.1}Grafica de intervalo [-1,4]}{15}
+\contentsline {section}{\numberline {B.2}Grafica de intervalo [2,8]}{16}
