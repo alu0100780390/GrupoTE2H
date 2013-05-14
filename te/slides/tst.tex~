@@ -77,7 +77,15 @@ que obliga a alcanzar una mayor destreza en este campo.
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
 
-\frametitle{Objetivos }
+\frametitle{Objetivos}
+\begin{block}{}
+  \begin{itemize}
+  \item Uso del ~\LaTeX y comprensión de todas sus sentencias de una forma ordenada y precisa como se muestra en este informe.
+  \item Utilización de un macro de ~\TeX, Beamer, para desarrollar capacidades de relación y exposición de un tema mediante transparencias 
+con la intención de transmitir y mostrar de una forma simple lo que hemos aprendido a traducir a ~\LaTeX.
+  \item Manejo de Python, lenguaje principal que permitirá la realización del experimento y la obtención de datos.
+  \end{itemize}
+\end{block}
 
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
@@ -154,9 +162,13 @@ En un módulo aparte se calculará el tiempo que tarda en ejecutarse cada interv
 
 \begin{frame}
 \begin{block}{}
-
+ En cuanto a la segunda parte, se podría decir que es una ampliación de la primera. Dado que la fórmula compuesta permite realizar el experimento con 
+números de reiteraciones diferentes. Se proponen dos programas en los que el número de reiteraciones esté ya asignado, siendo 2 y 4 el número de 
+repeticiones que se harán.
+Al igual que en la primera parte verán los tiempos trancurridos y los del CPU.
 \end{block}
 \end{frame}
+
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
@@ -167,7 +179,15 @@ En un módulo aparte se calculará el tiempo que tarda en ejecutarse cada interv
 
 \begin{ejemplo}
   \begin{enumerate}
-
+\item Tipo de CPU: Pentium(R) Dual-Core  CPU      E5200  @ 2.50GHz 
+\pause 
+\item cache size: 2048 KB 
+\pause
+\item CPU speed: 1200.000 Hz 
+\pause
+\item
+vendor ID: GenuineIntel 
+\pause
       
   \end{enumerate}
 \end{ejemplo}
@@ -189,6 +209,7 @@ En un módulo aparte se calculará el tiempo que tarda en ejecutarse cada interv
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
 \input{table3.tex}
+\input{table5.tex}
 \end{frame}
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
@@ -204,6 +225,26 @@ En un módulo aparte se calculará el tiempo que tarda en ejecutarse cada interv
 \label{fig:1}
 \end{center}
 \end{figure}
+\end{figure}
+
+\begin{frame}
+ \begin{figure}[!th]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{2intervalo.eps}
+\caption{Intervalo [-1,4]}
+\label{fig:2}
+\end{center}
+\end{figure}
+\end{frame}
+\begin{frame}
+ \begin{figure}[!th]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{3intervalo.eps}
+\caption{Intervalo [2,8]}
+\label{fig:3}
+\end{center}
+\end{figure}
+\end{frame}
 
 
 %------------------------------------------------------------------------------
@@ -230,6 +271,13 @@ En cuanto al tiempo de la CPU, no varía en absoluto en ninguno de los intervalo
 \begin{frame}
 \frametitle{Conclusiones}
 
+El objetivo de este trabajo ha sido la confección de un informe redactado en código ~\LaTeX, y unas transparencias en Beamer con este mismo lenguaje. 
+Cabe decir, que el lenguaje de programación con el que se ha confeccionado el experimento ha sido el python.
+Hemos obtenido la verificación de que los intervalos menores se usan para la fórmula simple y 
+que los mayores para la fórmula compuesta.
+También hemos visto que en los programas en los que intervienen definiciones de funciones no muy complejas el tiempo de la CPU es mínimo.
+Se puede concluir diciendo que hemos obtenido facilidades a la hora de creación de códigos para resolución de problemas, ademas de haber 
+logrado aumentar las capacidades que ya se tenían con ~\LaTeX
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
